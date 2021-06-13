@@ -1,0 +1,22 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="wrapper"></div>
+    <button onclick="addItem()">Add Item</button>
+
+    <script>
+        function addItem() {
+            const newElement = document.createElement('div');
+            newElement.innerText = 'Hi'; // mutation
+            wrapper.appendChild(newElement);
+            height = wrapper.getBoundingClientRect().height; // measurement 
+        }
+        const wrapper = document.getElementById('wrapper');
+    </script>
+</body>
+
+</html>
